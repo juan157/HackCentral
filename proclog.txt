@@ -1,0 +1,63 @@
+
+|====================================================================|
+|                                                                    |
+|                        The LaZagne Project                         |
+|                                                                    |
+|                          ! BANG BANG !                             |
+|                                                                    |
+|====================================================================|
+		
+########## User: abc ##########
+
+------------------- Windows passwords -----------------
+
+[+] Dpapi_Hash_Local found !!!
+Dpapi_hash_local: $DPAPImk$2*1*S-1-5-21-917625426-1509076280-321856257-1000*aes256*sha512*17400*37f95f1847157148c32feec9136171c2*288*e57323661b1dfd8ac1bfe093dd77115a2999a0835702322dec82b0269541faeb585c7290223e55dfa3a1cf056236f50acc65725d47021239270e0b05fb186858316000d9f287b240920d4ea246fbce8e3112146e445eb08b73a10caedc006f2f8b1a567bbea3a6a4bda7092f3af9ace33ee6c26e43976ce90e86b50e7511c7857040e8afe1e4dab309fd9a2969f09d9f
+
+########## User: Administrator ##########
+
+------------------- Windows passwords -----------------
+
+[+] Dpapi_Hash_Local found !!!
+Dpapi_hash_local: $DPAPImk$2*1*S-1-5-21-3111613574-2524581245-2586426736-500*aes256*sha512*17400*1ad66d8d693b12a94909f55d3fa72259*288*1f8ee2c18bfca56c218789ebcc8fb78ec29226db679f264107070c05f489595948cca14f8d62f53a23de234dae4542be90fffeae4663ce6454078515297d6454284050b7b5d3702703b08322146eff26b6dc4c8de4926641ba79f1775c7e5c53a9cbfe191b7e88b2857fcb898b58a7d34204d5fa862bde1741b98f12ab2b944fe70f304c7268a784308be44f522579fb
+
+########## User: SYSTEM ##########
+
+------------------- Hashdump passwords -----------------
+
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:32ed87bdb5fdc5e9cba88547376818d4:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+abc:1000:aad3b435b51404eeaad3b435b51404ee:32ed87bdb5fdc5e9cba88547376818d4:::
+
+------------------- Lsa_secrets passwords -----------------
+
+NL$KM
+0000   40 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    @...............
+0010   73 9C 9A 02 E2 9D AD 6E B7 4F AA 1C 87 D3 EB 10    s......n.O......
+0020   0C D4 BE 13 12 8D B1 EA 5D 15 4E B3 EE 10 9D 9C    ........].N.....
+0030   1B FA 68 2E AC 81 05 1C 26 1A 91 0B 1F E5 A9 A0    ..h.....&.......
+0040   67 96 24 20 2C 32 48 49 BE FC 89 91 D3 C0 34 41    g.$ ,2HI......4A
+0050   ED EB E8 5B 62 02 D5 A6 72 B1 8D AD 38 1D BA 56    ...[b...r...8..V
+
+DPAPI_SYSTEM
+0000   01 00 00 00 5C ED 94 1E 9E 6C 47 BD B8 C2 F7 27    .........lG....'
+0010   9F 2D 76 E0 E9 B6 64 68 F9 7E 04 46 55 DF E1 D5    .-v...dh.~.FU...
+0020   2F 9E 3B 96 A5 D1 06 15 34 13 70 52                /.;.....4.pR
+
+DefaultPassword
+0000   0C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+0010   31 00 32 00 33 00 34 00 35 00 36 00 00 00 00 00    1.2.3.4.5.6.....
+
+
+------------------- Autologon passwords -----------------
+
+[-] Password not found !!!
+DefaultPassword: 123456
+DefaultUserName: abc
+DefaultDomainName: 
+
+
+[+] 3 passwords have been found.
+For more information launch it again with the -v option
+
+elapsed time = 31.0120000839

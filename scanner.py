@@ -66,6 +66,8 @@ class Scanner:
 
                 if "=" in link:
                     print("[+] testing>" + link)
+                    if is_vulnerable_to_xss:
+                        print("XSS FOUND>> " + link)
 
     def test_xss_in_link(self, url):
         xss_test_script = "<scrIpt>alert('test')</scriPt>"
