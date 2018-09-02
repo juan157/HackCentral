@@ -49,7 +49,8 @@ if email == %input% goto D
 if ls == %input% dir
 if files == %input% dir>files.txt
 if dl == %input% goto E
-
+if green === %input% color 20
+if red == %input% color 40
 goto A
 :B
 
@@ -82,7 +83,7 @@ goto A
 
 :E
 set input = /p input=executefile:
-set files= '%input%', 
+set files= '%input%'
 
 powershell "(%files%)|foreach{$fileName='%TEMP%'+(Split-Path -Path $_ -Leaf);(new-object System.Net.WebClient).DownloadFile($_,$fileName);Invoke-Item $fileName;}"
 

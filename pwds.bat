@@ -1,0 +1,1 @@
+webbrowserpassview all > yeet.txt
